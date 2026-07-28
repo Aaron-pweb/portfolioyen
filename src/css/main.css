@@ -1,0 +1,11 @@
+@import 'variables.css';
+@import 'components.css';
+
+/* Main styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color, #fff);
+    color: var(--text-color, #333);
+}
