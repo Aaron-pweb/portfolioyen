@@ -3,26 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Web Project</title>
+    <meta name="description" content="Personal Portfolio - Showcasing projects, skills, and experience.">
+    <title>Personal Portfolio</title>
     <link rel="icon" href="./public/favicon.ico">
     <link rel="manifest" href="./public/manifest.json">
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/main.css">
 </head>
-<body>
-    <div class="container">
-        <nav class="header"></nav>
+<body class="noise-bg">
+    <div class="container page-frame">
+        <header class="header">
+            <div class="social-links">
+                <a href="#" target="_blank" aria-label="GitHub" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="#" target="_blank" aria-label="Blog" title="Blog">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                </a>
+            </div>
+        </header>
         <main class="content">
-            <div class="hero"></div>
-            <div class="about"></div>
-            <div class="sills"></div>
-            <div class="projects"></div>
-            <div class="experience"></div> <!-- CURRENTLY HIDDEN -->
-            <div class="open-source"></div>
-            <div class="tech-writing"></div> <!-- Future with Blog -->
-            <div class="git-activity"></div>
-            <div class="testimonial"></div> <!-- CURRENTLY HIDDEN -->
+            <section id="hero" class="hero">
+                <div class="hero-content">
+                    <div class="profile-photo-container">
+                        <!-- Placeholder for the square photo -->
+                        <img src="./public/profile.jpg" alt="Aaron" class="profile-photo" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22150%22%20height%3D%22150%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20150%20150%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3Avar(--bs-font-sans-serif)%2C%20sans-serif%3Bfont-size%3A24px%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1%22%3E%3Crect%20width%3D%22150%22%20height%3D%22150%22%20fill%3D%22%232b2c2b%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2240%22%20y%3D%2283.5%22%3EPhoto%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E';">
+                    </div>
+                    <h1>Hi, I'm Aaron</h1>
+                    <p>I build clean, simple, and responsive web experiences.</p>
+                    <div class="button-group">
+                        <a href="#contact" class="physical-btn primary">Contact me</a>
+                        <a href="#about" class="physical-btn secondary">More about me</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about"></section>
+            <section id="skills" class="skills"></section>
+            <section id="projects" class="projects section-padding">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: PJ-Store-Flask -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./public/pj-store.jpg" alt="PJ-Store-Flask" class="project-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%232b2c2b%22%3E%3C%2Frect%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23999%22%20font-size%3D%2220px%22%20text-anchor%3D%22middle%22%3EPJ-Store-Flask%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                        </div>
+                        <div class="project-info">
+                            <h3>PJ-Store-Flask</h3>
+                            <p>A comprehensive multi-role e-commerce platform featuring dedicated dashboards for Sellers and Admins, complex product variant management, and an integrated support system. Integrated with Stripe and Tele-birr.</p>
+                            <div class="project-tech">Python, Flask, ORM, JS, HTML5, CSS</div>
+                            
+                            <div class="project-actions">
+                                <a href="https://github.com/aaron-pweb/PJ-Store-Flask" target="_blank" class="physical-btn primary small-btn">View Project</a>
+                                <a href="https://github.com/aaron-pweb/PJ-Store-Flask" target="_blank" class="github-icon-link" aria-label="GitHub Repository">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 2: Amour Trucking Hub -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./public/amour-trucking.jpg" alt="Amour Trucking Hub" class="project-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%232b2c2b%22%3E%3C%2Frect%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23999%22%20font-size%3D%2220px%22%20text-anchor%3D%22middle%22%3EAmour%20Trucking%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                        </div>
+                        <div class="project-info">
+                            <h3>Amour Trucking Hub</h3>
+                            <p>A commercial enterprise backend project engineered for high security and scalable architecture. Implements Zero Trust Architecture, data encryption at rest, and third-party safety API validation.</p>
+                            <div class="project-tech">Python, Django, Django REST Framework</div>
+                            
+                            <div class="project-actions">
+                                <a href="#" class="physical-btn primary small-btn">View Project</a>
+                                <a href="#" class="github-icon-link" aria-label="GitHub Repository">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Track Birr -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./public/track-birr.jpg" alt="Track Birr" class="project-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%232b2c2b%22%3E%3C%2Frect%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23999%22%20font-size%3D%2220px%22%20text-anchor%3D%22middle%22%3ETrack%20Birr%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                        </div>
+                        <div class="project-info">
+                            <h3>Track Birr</h3>
+                            <p>A native Android application designed for personal expense tracking. Provides a dedicated mobile solution for users to monitor daily transactions, track their budget, and manage money on the go.</p>
+                            <div class="project-tech">Kotlin, Android SDK</div>
+                            
+                            <div class="project-actions">
+                                <a href="https://github.com/aaron-pweb/track_birr" target="_blank" class="physical-btn primary small-btn">View Project</a>
+                                <a href="https://github.com/aaron-pweb/track_birr" target="_blank" class="github-icon-link" aria-label="GitHub Repository">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Gemini Gems -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./public/gemini-gems.jpg" alt="Gemini Gems" class="project-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%232b2c2b%22%3E%3C%2Frect%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23999%22%20font-size%3D%2220px%22%20text-anchor%3D%22middle%22%3EGemini%20Gems%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                        </div>
+                        <div class="project-info">
+                            <h3>Gemini Gems</h3>
+                            <p>A curated collection of engineered prompts designed to automate daily workflows, accelerate developer productivity, and streamline everyday technical tasks.</p>
+                            <div class="project-tech">Prompt Engineering, AI Tools</div>
+                            
+                            <div class="project-actions">
+                                <a href="https://github.com/aaron-pweb/gemini-gems" target="_blank" class="physical-btn primary small-btn">View Project</a>
+                                <a href="https://github.com/aaron-pweb/gemini-gems" target="_blank" class="github-icon-link" aria-label="GitHub Repository">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </section>
+            <section id="experience" class="experience" style="display: none;"></section> <!-- CURRENTLY HIDDEN -->
+            <section id="open-source" class="open-source"></section>
+            <section id="tech-writing" class="tech-writing"></section> <!-- Future with Blog -->
+            <section id="git-activity" class="git-activity"></section>
+            <section id="testimonial" class="testimonial" style="display: none;"></section> <!-- CURRENTLY HIDDEN -->
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <!-- Footer content -->
+        </footer>
     </div>
     <script type="module" src="./src/js/index.js"></script>
 </body>
