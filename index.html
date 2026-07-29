@@ -17,7 +17,7 @@
     <div class="container page-frame">
         <header class="header">
             <div class="social-links">
-                <a href="#" target="_blank" aria-label="GitHub" title="GitHub">
+                <a href="https://github.com/Aaron-pweb" target="_blank" aria-label="GitHub" title="GitHub">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 </a>
                 <a href="#" target="_blank" aria-label="Blog" title="Blog">
@@ -42,7 +42,55 @@
             </section>
 
             <section id="about" class="about"></section>
-            <section id="skills" class="skills"></section>
+            <section id="skills" class="skills section-padding">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-grid">
+                    
+                    <!-- Programming Languages -->
+                    <div class="skill-category-card">
+                        <h3>Programming Languages</h3>
+                        <ul class="skill-list">
+                            <li>Python</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+
+                    <!-- Frameworks & Libraries -->
+                    <div class="skill-category-card">
+                        <h3>Frameworks & Libraries</h3>
+                        <ul class="skill-list">
+                            <li>Flask (Web Framework)</li>
+                            <li>SQLAlchemy (ORM)</li>
+                            <li>Pandas (Data Analysis)</li>
+                            <li>Matplotlib (Data Visualization)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Databases & Caching -->
+                    <div class="skill-category-card">
+                        <h3>Databases & Caching</h3>
+                        <ul class="skill-list">
+                            <li>SQLite</li>
+                            <li>PostgreSQL</li>
+                            <li>MySQL</li>
+                            <li>Redis (In-memory Data Store)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tools & Version Control -->
+                    <div class="skill-category-card">
+                        <h3>Tools & Version Control</h3>
+                        <ul class="skill-list">
+                            <li>Git (Version Control System)</li>
+                            <li>GitHub (Hosting & Collaboration)</li>
+                            <li>Postman (API Testing)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
             <section id="projects" class="projects section-padding">
                 <h2 class="section-title">My Projects</h2>
                 <div class="projects-grid">
@@ -50,17 +98,17 @@
                     <!-- Project 1: PJ-Store-Flask -->
                     <article class="project-card">
                         <div class="project-img-wrapper">
-                            <img src="./public/pj-store.jpg" alt="PJ-Store-Flask" class="project-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%232b2c2b%22%3E%3C%2Frect%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23999%22%20font-size%3D%2220px%22%20text-anchor%3D%22middle%22%3EPJ-Store-Flask%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            <img src="./public/opengame.png" alt="PJ-Store-Flask" class="project-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%232b2c2b%22%3E%3C%2Frect%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23999%22%20font-size%3D%2220px%22%20text-anchor%3D%22middle%22%3EPJ-Store-Flask%3C%2Ftext%3E%3C%2Fsvg%3E';">
                         </div>
                         <div class="project-info">
                             <h3>PJ-Store-Flask</h3>
-                            <p>A comprehensive multi-role e-commerce platform featuring dedicated dashboards for Sellers and Admins, complex product variant management, and an integrated support system. Integrated with Stripe and Tele-birr.</p>
-                            <div class="project-tech">Python, Flask, ORM, JS, HTML5, CSS</div>
+                            <p>Multi-role e-commerce platform with Stripe and Tele-birr payment integration.</p>
+                            <div class="project-tech">Python, Flask, JavaScript, HTML/CSS</div>
                             
                             <div class="project-actions">
-                                <a href="https://github.com/aaron-pweb/PJ-Store-Flask" target="_blank" class="physical-btn primary small-btn">View Project</a>
-                                <a href="https://github.com/aaron-pweb/PJ-Store-Flask" target="_blank" class="github-icon-link" aria-label="GitHub Repository">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                <a href="https://github.com/aaron-pweb/PJ-Store-Flask" target="_blank" class="physical-btn primary small-btn" style="display: inline-flex; align-items: center; gap: 0.4rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    View Source
                                 </a>
                             </div>
                         </div>
@@ -69,17 +117,17 @@
                     <!-- Project 2: Amour Trucking Hub -->
                     <article class="project-card">
                         <div class="project-img-wrapper">
-                            <img src="./public/amour-trucking.jpg" alt="Amour Trucking Hub" class="project-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%232b2c2b%22%3E%3C%2Frect%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23999%22%20font-size%3D%2220px%22%20text-anchor%3D%22middle%22%3EAmour%20Trucking%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            <img src="./public/amour-trucking.png" alt="Amour Trucking Hub" class="project-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%232b2c2b%22%3E%3C%2Frect%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23999%22%20font-size%3D%2220px%22%20text-anchor%3D%22middle%22%3EAmour%20Trucking%3C%2Ftext%3E%3C%2Fsvg%3E';">
                         </div>
                         <div class="project-info">
                             <h3>Amour Trucking Hub</h3>
-                            <p>A commercial enterprise backend project engineered for high security and scalable architecture. Implements Zero Trust Architecture, data encryption at rest, and third-party safety API validation.</p>
+                            <p>Secure enterprise backend featuring Zero Trust Architecture and data encryption.</p>
                             <div class="project-tech">Python, Django, Django REST Framework</div>
                             
                             <div class="project-actions">
-                                <a href="#" class="physical-btn primary small-btn">View Project</a>
-                                <a href="#" class="github-icon-link" aria-label="GitHub Repository">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                <a href="https://amourdigitalsolutions-tech.github.io/amour-frontend/" target="_blank" class="physical-btn primary small-btn" style="display: inline-flex; align-items: center; gap: 0.4rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    View Site
                                 </a>
                             </div>
                         </div>
@@ -88,18 +136,15 @@
                     <!-- Project 3: Track Birr -->
                     <article class="project-card">
                         <div class="project-img-wrapper">
-                            <img src="./public/track-birr.jpg" alt="Track Birr" class="project-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%232b2c2b%22%3E%3C%2Frect%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23999%22%20font-size%3D%2220px%22%20text-anchor%3D%22middle%22%3ETrack%20Birr%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            <img src="./public/trackbirr.jpg" alt="Track Birr" class="project-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%232b2c2b%22%3E%3C%2Frect%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23999%22%20font-size%3D%2220px%22%20text-anchor%3D%22middle%22%3ETrack%20Birr%3C%2Ftext%3E%3C%2Fsvg%3E';">
                         </div>
                         <div class="project-info">
                             <h3>Track Birr</h3>
-                            <p>A native Android application designed for personal expense tracking. Provides a dedicated mobile solution for users to monitor daily transactions, track their budget, and manage money on the go.</p>
+                            <p>Native Android application for personal daily expense and budget tracking.</p>
                             <div class="project-tech">Kotlin, Android SDK</div>
                             
                             <div class="project-actions">
-                                <a href="https://github.com/aaron-pweb/track_birr" target="_blank" class="physical-btn primary small-btn">View Project</a>
-                                <a href="https://github.com/aaron-pweb/track_birr" target="_blank" class="github-icon-link" aria-label="GitHub Repository">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                                </a>
+                                <span class="project-tech" style="font-size: 0.85rem; font-style: italic; opacity: 0.8; margin-top: 5px; display: inline-block;">Private Repository</span>
                             </div>
                         </div>
                     </article>
@@ -107,17 +152,55 @@
                     <!-- Project 4: Gemini Gems -->
                     <article class="project-card">
                         <div class="project-img-wrapper">
-                            <img src="./public/gemini-gems.jpg" alt="Gemini Gems" class="project-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%232b2c2b%22%3E%3C%2Frect%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23999%22%20font-size%3D%2220px%22%20text-anchor%3D%22middle%22%3EGemini%20Gems%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                            <img src="./public/gemini-gems.png" alt="Gemini Gems" class="project-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%232b2c2b%22%3E%3C%2Frect%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23999%22%20font-size%3D%2220px%22%20text-anchor%3D%22middle%22%3EGemini%20Gems%3C%2Ftext%3E%3C%2Fsvg%3E';">
                         </div>
                         <div class="project-info">
                             <h3>Gemini Gems</h3>
-                            <p>A curated collection of engineered prompts designed to automate daily workflows, accelerate developer productivity, and streamline everyday technical tasks.</p>
+                            <p>Curated collection of AI prompts to automate developer workflows and tasks.</p>
                             <div class="project-tech">Prompt Engineering, AI Tools</div>
                             
                             <div class="project-actions">
-                                <a href="https://github.com/aaron-pweb/gemini-gems" target="_blank" class="physical-btn primary small-btn">View Project</a>
-                                <a href="https://github.com/aaron-pweb/gemini-gems" target="_blank" class="github-icon-link" aria-label="GitHub Repository">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                <a href="https://github.com/aaron-pweb/gemini-gems" target="_blank" class="physical-btn primary small-btn" style="display: inline-flex; align-items: center; gap: 0.4rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    View Source
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Digital Audio Signal Filtering -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./public/digital-filter-audio.png" alt="Digital Audio Signal Filtering" class="project-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%232b2c2b%22%3E%3C%2Frect%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23999%22%20font-size%3D%2220px%22%20text-anchor%3D%22middle%22%3EAudio%20Filtering%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                        </div>
+                        <div class="project-info">
+                            <h3>Digital Audio Signal Filtering</h3>
+                            <p>Data processing project focused on digital signal filtering and noise suppression algorithms.</p>
+                            <div class="project-tech">Python, Jupyter Notebook</div>
+                            
+                            <div class="project-actions">
+                                <a href="https://colab.research.google.com/github/Aaron-pweb/Signal_Assignment/blob/main/Signal-and-system-assignment.ipynb" target="_blank" class="physical-btn primary small-btn" style="display: inline-flex; align-items: center; gap: 0.4rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    View Source
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Babi Bingo -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./public/babi-bingo.png" alt="Babi Bingo" class="project-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%232b2c2b%22%3E%3C%2Frect%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23999%22%20font-size%3D%2220px%22%20text-anchor%3D%22middle%22%3EBabi%20Bingo%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                        </div>
+                        <div class="project-info">
+                            <h3>Babi Bingo</h3>
+                            <p>Real-time commercial bingo management platform featuring WebSocket state synchronization.</p>
+                            <div class="project-tech">TypeScript, WebSockets</div>
+                            
+                            <div class="project-actions">
+                                <a href="https://babi-bingo.onrender.com/" target="_blank" class="physical-btn primary small-btn" style="display: inline-flex; align-items: center; gap: 0.4rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    View Site
                                 </a>
                             </div>
                         </div>
